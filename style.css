@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.conteiner{ 
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 2fr 30fr 1fr;
+    grid-template-areas: 
+    "a h h"
+    "a m m"
+    "a m m"
+   ;
+}
+.header { 
+    grid-area: h;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgb(79, 146, 247);
+    text-align: center;
+}
+.main {
+    grid-area: m;
+    background: grey;
+
+}
+.aside {
+    grid-area: a;
+    background:indianred;
+
+}
+.footer {
+    grid-area: f;
+    background: indigo;
+
+}
+.hg {
+    width: 25px;
+    height: 25px;
+}
